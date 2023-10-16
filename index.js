@@ -12,25 +12,43 @@
 //arr2.pop(); //changes last item in array to whats in the parenthesis
 //console.log(arr2);
 let year = 2023;
-const students = [];
-const Travis = {
+const Travis = [
+  {
     firstName: "Travis",
     lastName: "Tam",
     DOB: 2008,
-    graduated: false, 
-    age:function () {
-        return year - this.DOB;
-    }
-}
-const Oleg = {
-   firstName: "Oleg",
-   lastName: "Pony",
-   DOB: 2008,
-   graduated: false,
-   age: function () {
-    return year - this.DOB;
-   }
-}
-
-const arr = [Travis,Oleg];
-students.forEach((student) => console.log(arr));
+    graduated: false,
+    age: function () {
+      //subtract his DOB year from current year
+      return year - this.DOB;
+    },
+  },
+];
+const Chenzee = [
+  {
+    firstName: "ChenZee",
+    lastName: "Unknown",
+    DOB: 2008,
+    graduated: false,
+    age: function () {
+      //subtract his DOB year from current year
+      return year - this.DOB;
+    },
+  },
+];
+const Olega = [
+  {
+    firstName: "Olega",
+    lastName: "Goyco",
+    DOB: 2008,
+    graduated: false,
+    age: function () {
+      //subtract his DOB year from current year
+      return year - this.DOB;
+    },
+  },
+];
+const student = [Travis, Chenzee, Olega];
+student.forEach((student) => console.log(student.firstName));
+const nongraduates = student.filter((student) => student.graduated === false);
+console.log(nongraduates);
