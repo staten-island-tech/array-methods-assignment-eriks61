@@ -12,7 +12,7 @@
 //arr2.pop(); //changes last item in array to whats in the parenthesis
 //console.log(arr2);
 let year = 2023;
-const Travis = [
+const student = [
   {
     firstName: "Travis",
     lastName: "Tam",
@@ -23,8 +23,6 @@ const Travis = [
       return year - this.DOB;
     },
   },
-];
-const Chenzee = [
   {
     firstName: "ChenZee",
     lastName: "Unknown",
@@ -35,8 +33,6 @@ const Chenzee = [
       return year - this.DOB;
     },
   },
-];
-const Olega = [
   {
     firstName: "Olega",
     lastName: "Goyco",
@@ -48,7 +44,6 @@ const Olega = [
     },
   },
 ];
-const student = [Travis, Chenzee, Olega];
 student.forEach((student) => console.log(student.firstName));
 const nongraduates = student.filter((student) => student.graduated === false);
 console.log(nongraduates);
