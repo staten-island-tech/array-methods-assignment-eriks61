@@ -33,4 +33,4 @@ const Oleg = {
 }
 
 const arr = [Travis,Oleg];
-students.forEach((student) => console.log(arr[0,1]));
+students.forEach((student) => console.log(arr));
