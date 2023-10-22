@@ -44,19 +44,21 @@ const student = [
     },
   },
 ];
-student.forEach((student) => console.log(student.firstName));
-const list = [];
-student.forEach((s) => {
-  list.push({
-    stats: [
-      s.lastName,
-       s.DOB,
-        s.graduated,
-         s.age()
-        ],
-  });
+student.forEach((student)=>{
+  console.log(student.firstName)
 });
-console.log(list);
-student.forEach((student) => console.log());
+
+student.forEach((student)=> {
+  console.log(student.lastName);
+});
+student.forEach((student)=> {
+  console.log(student.DOB);
+});
+student.forEach((student)=> {
+  console.log(student.graduated)
+});
+student.forEach((student)=> {
+  console.log(student.graduated)
+});
 const nongraduates = student.filter((student) => student.graduated === false);
 console.log(nongraduates);
