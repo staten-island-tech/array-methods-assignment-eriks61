@@ -62,3 +62,7 @@ student.forEach((student)=> {
 });
 const nongraduates = student.filter((student) => student.graduated === false);
 console.log(nongraduates);
+
+student.forEach((student) => {
+  console.log()
+})
